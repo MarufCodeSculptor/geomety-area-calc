@@ -27,6 +27,7 @@ const calculateTriangeArea = () => {
     newElm.classList.add("text-xl", "p-5", "font-bold", "bg-blue-200", "drop-shadow-lg","rounded-lg","my-3");
     getElm('triangle-body').appendChild(newElm)
 }
+
 const calculateRactangleArea = () => {
     const rectLength= getinputValue('react-lenght');
     const rectHeight = getinputValue('rect-height');
