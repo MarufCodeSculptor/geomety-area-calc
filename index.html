@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry-calculator</title>
+    <!-- tailwind and daisy links  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind and daisy link ends -->
+  </head>
+  <body class="mt-5">
+    <header></header>
+    <!-- main content container -->
+    <main class="w-[1200px] mx-auto flex gap-5">
+      <!-- shape card container -->
+      <div class="shape-card-container grid grid-cols-2 gap-5">
+        <!-- card start card-1 -->
+        <div class="card bg-blue-100 drop-shadow-lg">
+          <figure>
+            <img src="images/triangle.png" alt="Shoes" />
+          </figure>
+          <div id="triangle-body" class="card-body">
+            <h2 class="card-title">triangle</h2>
+            <p>area=.5 x b x h</p>
+
+            <div class="flex items-start">
+              <div class="flex items-center justify-between">
+                <input
+                  id="base"
+                  type="number"
+                  placeholder="b"
+                  class="input input-bordered input-accent w-1/2 max-w-xs"
+                />
+                <div class="flex-1 flex justify-start">
+                  <span class="text-2xl ms-2 font-extrabold uppercase">cm</span>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-center">
+                <input
+                  id="height"
+                  type="number"
+                  placeholder="h"
+                  class="input input-bordered input-accent w-1/2 max-w-xs"
+                />
+                <div class="flex-1 flex justify-start">
+                  <span class="text-2xl ms-2 font-extrabold uppercase">cm</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-actions">
+              <button
+                onclick="calculateTriangeArea()"
+                class="btn btn-primary w-full"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card end  -->
+        <!-- card start card-2 -->
+        <div class="card bg-blue-100 drop-shadow-lg">
+          <figure>
+            <img
+              class="mt-3"
+              src="images/rectangle.png"
+              alt="geometry shape rectangle"
+            />
+          </figure>
+          <div id="body-rectange" class="card-body">
+            <h2 class="card-title">RectAngle</h2>
+            <p>Rectangle Area(A)=lengt x height</p>
+
+            <div class="flex items-start">
+              <div class="flex items-center justify-between">
+                <!-- card two input  -->
+                <!-- input lenght  -->
+                <input
+                  id="react-lenght"
+                  type="number"
+                  placeholder="Length"
+                  class="input input-bordered input-accent w-1/2 max-w-xs"
+                />
+                <div class="flex-1 flex justify-start">
+                  <span class="text-2xl ms-2 font-extrabold uppercase">cm</span>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <!-- input height -->
+                <input
+                  id="rect-height"
+                  type="number"
+                  placeholder="height"
+                  class="input input-bordered input-accent w-1/2 max-w-xs"
+                />
+
+                <div class="flex-1 flex justify-start">
+                  <span class="text-2xl ms-2 font-extrabold uppercase">cm</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-actions">
+              <button
+                onclick="calculateRactangleArea()"
+                class="btn btn-primary w-full"
+              >
+                Calculate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card end  -->
+        <!-- card start card-1 -->
+        <div class="card bg-blue-100 drop-shadow-lg">
+          <figure>
+            <img src="images/triangle.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">triangle</h2>
+            <p>area=.5 x b x h</p>
+
+            <div class="flex items-start">
+              <div class="flex items-center justify-between">
+                <input
+                  type="number"
+                  placeholder="b"
+                  class="input input-bordered input-accent w-1/2 max-w-xs"
+                /><span class="text-2xl ms-2 font-extrabold uppercase">cm</span>
+              </div>
+
+              <div class="flex items-center justify-center">
+                <input
+                  type="number"
+                  placeholder="h"
+                  class="input input-bordered input-accent w-1/2 max-w-xs"
+                /><span class="text-2xl ms-2 font-extrabold uppercase">cm</span>
+              </div>
+            </div>
+
+            <div class="card-actions">
+              <button class="btn btn-primary w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- card end  -->
+
+        <!-- card start card-1 -->
+        <div class="card bg-blue-100 drop-shadow-lg">
+          <figure>
+            <img src="images/triangle.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">triangle</h2>
+            <p>area=.5 x b x h</p>
+
+            <div class="flex items-start">
+              <div class="flex items-center justify-between">
+                <input
+                  type="number"
+                  placeholder="b"
+                  class="input input-bordered input-accent w-1/2 max-w-xs"
+                /><span class="text-2xl ms-2 font-extrabold uppercase">cm</span>
+              </div>
+
+              <div class="flex items-center justify-center">
+                <input
+                  type="number"
+                  placeholder="h"
+                  class="input input-bordered input-accent w-1/2 max-w-xs"
+                /><span class="text-2xl ms-2 font-extrabold uppercase">cm</span>
+              </div>
+            </div>
+
+            <div class="card-actions">
+              <button class="btn btn-primary w-full">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <!-- card end  -->
+      </div>
+      <!--card container closing tag-->
+
+      <!-- calculation result showing container -->
+      <div
+        id="result-board"
+        class="w-96 p-10 bg-blue-100 rounded-md drop-shadow-lg"
+      >
+        <h3 class="text-3xl capitalize font-bold">area calculator</h3>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
